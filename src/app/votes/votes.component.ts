@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {Jackie} from '../jackie';
 @Component({
   selector: 'app-votes',
   templateUrl: './votes.component.html',
