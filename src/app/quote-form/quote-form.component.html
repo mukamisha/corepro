@@ -1,24 +1,22 @@
-<!-- <p>quote-form works!</p> -->
 <div class="container-fluid">
-        <h2 class="text-center">Create a new Goal</h2>
+        <h2 class="text-center">Write a quote you like to share with others</h2>
         <hr>
         <form>
             <div class="form-group">
-      
-                <label for="quote"></label>
-                <input type="text" required class="form-control" id="quote">
-      
-            </div>
-            <div class="form-group">
-                    <label for="author">Author</label>
-                    <input type='date' id="complete" required>
-          
+                <label for="Quote">Quote</label>
+                <textarea class="form-control" id="Quote" rows="4" required></textarea>
+              
             </div>
             <div class="form-group">
       
-                <label for="description">Description</label>
-                <textarea class="form-control" id="description" rows="4" required></textarea>
+                <label for="author"></label>
+                <input type="text" required class="form-control" id="author">
       
             </div>
-         
+            <div class="form-group">
+                    <label for="dateOfCompletion">Date</label>
+                    <input type='date' id="date" required>
+            </div>
         </form>
+</div>
+        
