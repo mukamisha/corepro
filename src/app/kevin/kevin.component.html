@@ -1,0 +1,16 @@
+<div>
+    <!-- <h1>My Goals</h1> -->
+    <!-- <hr> -->
+    <ul>
+      <div *ngFor='let kik of kiki;let a = index'>
+        <li>
+          <p>{{kik.id}}</p>
+          <p>{{kik.quote}}</p>
+          <p>{{kik.author}}</p>
+
+        </li>
+        <button (click)='toggleDetails(a)'>showDateDescription</button>
+        <app-quote-detail *ngIf='kik.showDescription' [kiki]='kik'(isComplete)='unNeededQuote($event,a)'></app-quote-detail>
+      </div>
+    </ul>
+  </div>
