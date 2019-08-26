@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { KevinComponent } from './kevin/kevin.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
+import { DateDetailsComponent } from './date-details/date-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     KevinComponent,
     QuoteDetailComponent,
-    QuoteFormComponent
+    QuoteFormComponent,
+    DateDetailsComponent
   ],
   imports: [
     BrowserModule,

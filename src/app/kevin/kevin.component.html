@@ -1,4 +1,4 @@
-<div>
+<div class="col-md-6">
     <!-- <h1>My Goals</h1> -->
     <!-- <hr> -->
     <ul>
@@ -7,11 +7,16 @@
           <p>{{kik.id}}</p>
           <p>{{kik.quote}}</p>
           <p>{{kik.author}}</p>
-
+         
         </li>
         <button (click)='toggleDetails(a)'>showDateDescription</button>
         <app-quote-detail *ngIf='kik.showDescription' [kiki]='kik'(isComplete)='unNeededQuote($event,a)'></app-quote-detail>
       </div>
     </ul>
-    <app-quote-form></app-quote-form>
+    <!-- <div *ngFor='let kik of kiki;let c = index'>
+        <li>{{kik.author}} due on {{kik.completeDate|date}}</li> -->
+    <!-- <app-date-details></app-date-details> -->
+
+    <!-- <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form> -->
   </div>
+  <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>

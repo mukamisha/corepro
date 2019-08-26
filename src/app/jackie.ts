@@ -5,7 +5,8 @@ export class Jackie {
 //     description:string;
 // }
 showDescription: boolean;
-constructor(public id: number,public quote: string, public author: string ,public description:string){
+constructor(public id: number,public quote: string, public author: string ,public description:string,public date:Date){
+  // constructor(public id: number,public quote: string, public author: string ,public description:string,public date:Date){
   this.showDescription=false;
 }
 }
