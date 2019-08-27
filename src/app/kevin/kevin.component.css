@@ -2,3 +2,12 @@
 background-image:url("src/assets/images/watch.jpg");
 } */
 
+.footer {
+    background-color:black;
+    text-align:center;
+    width:100%;
+  position: fixed;
+   left: 0;
+   bottom: 0;
+   color: white;
+}
