@@ -10,7 +10,7 @@
           <p>{{kik.author}}</p>
          
         </li>
-        <button (click)='toggleDetails(a)'>showDateDescription</button>
+        <button (click)='toggleDetails(a)'class="btn btn-primary disabled">showDateDescription</button>
         <app-quote-detail *ngIf='kik.showDescription' [kiki]='kik'(isComplete)='unNeededQuote($event,a)'></app-quote-detail>
         <app-votes></app-votes>
       </div>
@@ -24,7 +24,7 @@
   
   <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
   <div class="footer">
-    <h2>Copyright@2019Jacky</h2>
+    <h2 style="font-family:Georgia, serif">Copyright@2019Jacky</h2>
   </div>
 
   
